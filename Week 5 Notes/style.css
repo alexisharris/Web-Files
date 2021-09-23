@@ -1,0 +1,56 @@
+body {
+  font-family: Roboto;
+  font-size: 2vw;
+  font-weight: 100;
+  border: solid rgba(100,100,100, 1) 1px;
+}
+
+p {
+  color; rgba(100,100,100, 1);
+}
+
+h1 {
+  background-color: blue;
+  font-family: "Fjalla One"
+}
+
+
+/* You can make sure that a style applies regardless of
+hierarchy by using !important */
+#second {
+  font-weight: bold;
+  color: black !important
+  font-family: "Alegreya Sans"
+  font-weight: 900;
+}
+
+
+.grey {
+  color: grey;
+}
+
+
+span {
+  color: blue;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+/* Styles for borders: solid, dotted, dashed, double, ridge, groove */
+hr {
+  border-style: dashed;
+  border-color: rgba(255, 0, 0, 0.5);
+  border-width: 2px;
+}
+
+
+/* called the box model */
+#two {
+  border: solid black 2px;
+  background-color: blue;
+  /* Margin affects outside of box */
+  margin: 20px;
+  /* padding affects inside of box */
+  /* Padding and margin order: top right bottom left */
+  padding: 150px;
+}

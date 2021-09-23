@@ -1,0 +1,112 @@
+body {
+  background-color: #011640;
+}
+
+a:link {
+  color: #F279A6;
+}
+
+/* visited link */
+a:visited {
+  color: #F279A6;
+}
+
+h1 {
+  font-family: 'Alegreya Sans', sans-serif;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: 'Alegreya';
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Alegreya';
+}
+
+li {
+  font-family: 'Alegreya';
+}
+
+#title {
+  text-align: center;
+  font-size: 40px;
+  color: #F2F2F2;
+}
+
+#me {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vw;
+  border-radius: 6px;
+  box-shadow: 2px 2px black;
+}
+
+#pronouns {
+  text-align: center;
+  color: #F2F2F2;
+}
+
+#table1 {
+  vertical-align: top;
+  border-collapse: separate;
+  border-spacing: 80px;
+}
+
+#column1 {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #F2F2F2;
+  border-radius: 7px;
+  color: #021F59;
+  box-shadow: 2px 2px black;
+  width: 50%;
+}
+
+#column2 {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #F2F2F2;
+  border-radius: 7px;
+  color: #021F59;
+  box-shadow: 2px 2px black;
+  width: 50%;
+}
+
+#descriptionhead {
+  text-align: center;
+}
+
+#goalshead {
+  text-align: center;
+}
+
+
+#portfolio {
+  width: 100%;
+  text-align: center;
+}
+
+#portfolio2 {
+  display: inline-block;
+  padding-left: 35vw;
+  padding-right: 35vw;
+  background-color: #F2F2F2;
+  border-radius:7px;
+  color: #021F59;
+  box-shadow: 2px 2px black;
+}
+
+#portfolioitems {
+  font-size: 20px;
+}
+
+#portfoliohead {
+  font-size: 25px;
+}
