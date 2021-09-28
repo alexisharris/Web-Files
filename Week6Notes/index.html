@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Week 6 Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue">
+  </head>
+  <body>
+
+    <section id="hero">
+      <!-- For hero images, make sure you have the h1 before -->
+      <h1 id="heroText">Welcome to my Site!</h1>
+      <img src="assets/hero.jpg" alt="Watercolor Boulder Flatirons" id="flatirons">
+      <!-- Use divs to make "sections" within a section tag -->
+    </section>
+    <section id= "one">
+      <!-- You should only have one h1 per webpage -->
+      <h2>This is my <span id="first">first section</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis nisl ornare eros varius, nec accumsan sapien molestie. Praesent et mi ac mauris mattis dignissim. Quisque rutrum lacinia lectus, in faucibus dolor fringilla sollicitudin. Vestibulum porttitor sem erat, at viverra nisi elementum eget. Donec ac turpis elit. Fusce vel dignissim lacus. Aliquam suscipit tempus ornare. Sed at ante eget est mattis bibendum. Integer ornare diam nisl, rhoncus tempus arcu egestas nec. Phasellus nisi leo, facilisis eu justo quis, ornare rhoncus quam. Nulla erat sem, aliquam tincidunt tortor in, sodales commodo massa. Morbi nec massa vel orci eleifend porttitor. Duis quis ligula nisi. In sollicitudin vestibulum ante, non rhoncus ipsum placerat quis.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu ante nec leo pellentesque semper sit amet venenatis dui. Fusce sollicitudin massa tortor, vitae congue metus rhoncus vitae. Aliquam sit amet vehicula tellus. Aenean elit nibh, ultrices quis auctor ut, pharetra ac metus. Nunc at imperdiet justo, et placerat ipsum. In feugiat dolor id enim condimentum efficitur et a arcu. Maecenas fringilla, dui sed scelerisque pulvinar, enim justo suscipit arcu, quis ornare lacus eros ut neque. Cras porttitor sagittis interdum. Maecenas odio quam, rutrum eget dapibus in, consequat ac quam
+        </p>
+    </section>
+
+    <section id="two">
+      <h2>This is my second section</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis nisl ornare eros varius, nec accumsan sapien molestie. Praesent et mi ac mauris mattis dignissim. Quisque rutrum lacinia lectus, in faucibus dolor fringilla sollicitudin. Vestibulum porttitor sem erat, at viverra nisi elementum eget. Donec ac turpis elit. Fusce vel dignissim lacus. Aliquam suscipit tempus ornare. Sed at ante eget est mattis bibendum. Integer ornare diam nisl, rhoncus tempus arcu egestas nec. Phasellus nisi leo, facilisis eu justo quis, ornare rhoncus quam. Nulla erat sem, aliquam tincidunt tortor in, sodales commodo massa. Morbi nec massa vel orci eleifend porttitor. Duis quis ligula nisi. In sollicitudin vestibulum ante, non rhoncus ipsum placerat quis.
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu ante nec leo pellentesque semper sit amet venenatis dui. Fusce sollicitudin massa tortor, vitae congue metus rhoncus vitae. Aliquam sit amet vehicula tellus. Aenean elit nibh, ultrices quis auctor ut, pharetra ac metus. Nunc at imperdiet justo, et placerat ipsum. In feugiat dolor id enim condimentum efficitur et a arcu. Maecenas fringilla, dui sed scelerisque pulvinar, enim justo suscipit arcu, quis ornare lacus eros ut neque. Cras porttitor sagittis interdum. Maecenas odio quam, rutrum eget dapibus in, consequat ac quam
+      </p>
+    </section>
+
+    <section id="three">
+      <h2> This section contains a button </h2>
+      <button type="button" id="mybutton">Click this button</button>
+      <button type="button" id="mybutton2">Click this button</button>
+      <button type="button" id="mybutton3">Click this button</button>
+    </section>
+
+<script type="text/javascript">
+  console.log("javascript working");
+  document.getElementById("mybutton").addEventListener("click", function() {alert("You pushed the button!")});
+  document.getElementById("mybutton").addEventListener("mouseover", function() {alert("You hovered over the button!")});
+  document.getElementById("mybutton2").addEventListener("click", buttonClicked);
+  document.getElementById("hero").addEventListener("click", heroClicked);
+  document.getElementById("mybutton3").addEventListener("click", buttonThree);
+
+  function buttonClicked(){
+    alert ("You pushed the second button!");
+  }
+
+  function heroClicked(){
+    alert("You clicked the hero");
+    document.getElementById("heroText").innerHTML = "You are not welcome!";
+  }
+
+  function buttonThree(){
+    alert("You pushed the button!");
+    document.getElementById("first").style.color="red";
+    document.getElementById("three").style.backgroundColor = "skyblue";
+  }
+
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,71 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  color: red;
+  font-family: helvetica;
+}
+
+h1, h2 {
+  font-family: "Bebas Neue";
+}
+
+h2 {
+  font-size: 40px;
+}
+
+
+#hero {
+  width: 100vw;
+  height: 70vh;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+#flatirons {
+  width: 100vw;
+  /* could use property left or right: ___px; to move the image over*/
+  position: relative;
+  bottom: 450px;
+}
+
+
+#hero h1 {
+  z-index: 1;
+  position: relative;
+  font-size: 7vw;
+  top: 20vh;
+  margin: 0 0 0 10vw;
+}
+
+#one, #two, #three {
+  margin-left: 7vw;
+  margin-right: 3vw;
+  margin-top: 10vh;
+}
+
+button {
+  background-color: blue;
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  padding: 7px 20px;
+  position: relative;
+  left: 40vw;
+  /* Top and bottom is first, left and right is second in padding*/
+}
+
+button:active {
+  background-color: green;
+  color: white;
+}
+
+button:hover{
+  border: solid black 3px;
+}
+
+/* links */
+/* a hover must come after a:link and a:visited */
+/* a:active must come after a:hover */

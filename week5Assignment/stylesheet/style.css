@@ -1,14 +1,14 @@
 body {
-  background-color: #011640;
+  background-color: #6092A6;
 }
 
 a:link {
-  color: #F279A6;
+  color: #6092A6;
 }
 
 /* visited link */
 a:visited {
-  color: #F279A6;
+  color: #8C8C8C;
 }
 
 h1 {
@@ -27,12 +27,13 @@ p {
 
 li {
   font-family: 'Alegreya';
+  color: #184059;
 }
 
 #title {
   text-align: center;
   font-size: 40px;
-  color: #F2F2F2;
+  color: #184059;
 }
 
 #me {
@@ -41,12 +42,12 @@ li {
   margin-right: auto;
   width: 40vw;
   border-radius: 6px;
-  box-shadow: 2px 2px black;
+  box-shadow: 0 0 5px rgba(0,0,0,.4);
 }
 
 #pronouns {
   text-align: center;
-  color: #F2F2F2;
+  color: #184059;
 }
 
 #table1 {
@@ -60,11 +61,15 @@ li {
   padding-right: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #F2F2F2;
+  background-color: #F2CBBD;
   border-radius: 7px;
-  color: #021F59;
-  box-shadow: 2px 2px black;
+  color: #184059;
+  box-shadow: 0 0 5px rgba(0,0,0,.4);
   width: 50%;
+}
+
+#column1 p {
+  color: #733934;
 }
 
 #column2 {
@@ -72,11 +77,15 @@ li {
   padding-right: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #F2F2F2;
+  background-color: #F2CBBD;
   border-radius: 7px;
-  color: #021F59;
-  box-shadow: 2px 2px black;
+  color: #184059;
+  box-shadow: 0 0 5px rgba(0,0,0,.4);
   width: 50%;
+}
+
+#column2 li {
+  color: #733934;
 }
 
 #descriptionhead {
@@ -97,10 +106,10 @@ li {
   display: inline-block;
   padding-left: 35vw;
   padding-right: 35vw;
-  background-color: #F2F2F2;
+  background-color: #F2CBBD;
   border-radius:7px;
-  color: #021F59;
-  box-shadow: 2px 2px black;
+  color: #184059;
+  box-shadow: 0 0 5px rgba(0,0,0,.4);
 }
 
 #portfolioitems {
@@ -109,4 +118,74 @@ li {
 
 #portfoliohead {
   font-size: 25px;
+}
+
+hr.rounded {
+  margin-top: 70px;
+  border-top: 2px solid #bbb;
+  border-radius: 5px;
+}
+
+#contact {
+  margin-left: 25vw;
+  margin-right: 25vw;
+  margin-top: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #F2CBBD;
+  border-radius:7px;
+  color: #733934;
+  box-shadow: 0 0 5px rgba(0,0,0,.4);
+}
+
+#contact h1 {
+  color: #184059;
+}
+
+
+#contactMe {
+  text-align: center;
+}
+
+#emailBox  {
+  border: 0px;
+  box-shadow: inset 0 0 5px #000000;
+  border-radius: 5px;
+  height:4vh;
+  width: 10vw;
+}
+
+button {
+  background-color: #733934;
+  font-family: 'Alegreya Sans', sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  padding: 7px 20px;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  left: 18vw;
+  border: 0px;
+  border-radius: 10px;
+  text-align: center;
+  /* Top and bottom is first, left and right is second in padding*/
+}
+
+
+label {
+  font-family: 'Alegreya';
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+textarea {
+  width: 42vw;
+  height: 25vh;
+  border: 0px;
+  box-shadow: inset 0 0 5px #000000;
+  border-radius: 5px;
 }
