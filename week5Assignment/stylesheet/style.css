@@ -175,6 +175,23 @@ button {
   /* Top and bottom is first, left and right is second in padding*/
 }
 
+button:hover {
+  background-color: #BF785E;
+  font-family: 'Alegreya Sans', sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  padding: 7px 20px;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  left: 18vw;
+  border: 0px;
+  border-radius: 10px;
+  text-align: center;
+  /* Top and bottom is first, left and right is second in padding*/
+}
 
 label {
   font-family: 'Alegreya';
