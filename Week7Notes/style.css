@@ -1,0 +1,50 @@
+body {
+  background-color: #F1B47D;
+}
+
+#section1 {
+  background-color: #65A1F4;
+  margin: 30vh 20vw;
+  padding: 8vh 10vw 10vh 10vw;
+  border-radius: 8px;
+}
+
+button {
+  border-radius: 8px;
+  padding: 1vh 3vw;
+  float: right;
+  margin-top: 1vh;
+  background-color: #1A64A6;
+  color: white;
+  /* only works with elements that are display: block; so if it isn't working, add that css in */
+}
+
+button:hover {
+  border: #fff solid 1px;
+}
+
+button:active {
+  color: grey;
+}
+
+h1 {
+  color: #1A64A6;
+}
+
+#flex {
+  display: flex;
+  margin: 150px;
+}
+
+div {
+  border: 1px solid black;
+  margin-left: 2vw;
+}
+
+.flexItem {
+  flex-grow: 1;
+}
+
+.flexItem2 {
+  flex-grow: 2;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quote Machine</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="section1">
+      <h1 id="quoteText">Welcome to the quote machine, click the button to get a quote.</h1>
+      <button type="button" id="newQuote">New Quote</button>
+    </section>
+
+    <section id="flex">
+      <div class="flexItem">
+        <h2>One</h2>
+      </div>
+      <div class="flexItem2">
+        <h2>Two</h2>
+      </div>
+      <div class="flexItem">
+        <h2>Three</h2>
+      </div>
+    </section>
+
+
+    <!-- bracket [] is how you grab anything in an array -->
+    <!-- .length is how many items in array -->
+    <!-- ++ equals one increment up always-->
+    <!-- += means going a given number of increments up (i.e. 1 in my function) -->
+    <!-- != means does not equal -->
+
+    <script type="text/javascript">
+      const quotes = ["When you have a dream, you’ve got to grab it and never let go", "Nothing is impossible. The word itself says ‘I’m possible!''" , "There is nothing impossible to they who will try." , "The bad news is time flies. The good news is you’re the pilot." ,  "Life has got all those twists and turns. You’ve got to hold on tight and off you go.", "Keep your face always toward the sunshine, and shadows will fall behind you.",  "Success is not final, failure is not fatal: it is the courage to continue that counts."];
+      let quoteCount = 0;
+
+      document.getElementById("newQuote").addEventListener("click", buttonClicked);
+        function buttonClicked(){
+          console.log(quoteCount);
+          console.log(quotes[quoteCount]);
+          document.getElementById("quoteText").innerHTML = quotes[quoteCount];
+          if(quoteCount>=6){
+            quoteCount=0
+          }
+          else {
+            quoteCount ++;
+          }
+
+        }
+    </script>
+  </body>
+</html>

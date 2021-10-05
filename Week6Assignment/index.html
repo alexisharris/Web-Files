@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap" rel="stylesheet">
+    <title>Halloween Surprise</title>
+  </head>
+
+  <body>
+
+    <h1>Halloween Surprise</h1>
+    <p> Can you find the treats or will you get tricked? Click to interact with the doors to find out.</p>
+
+    <section>
+      <div class="row">
+        <div class="col">
+          <h2 id="door1Title"> Trick Or Treat? </h2>
+          <img src="assets/TrickOrTreat.png" alt="Skeletons Dancing" style="width:100%" id="door1">
+        </div>
+        <div class="col">
+          <h2 id="door2Title"> Trick Or Treat? </h2>
+          <img src="assets/TrickOrTreat.png" alt="Forest" style="width:100%" id="door2">
+        </div>
+      </div>
+    </section>
+
+    <section class="row3">
+        <div class="col3">
+          <h2 id="door3Title"> Trick Or Treat? </h2>
+          <img src="assets/TrickOrTreat.png" alt="Trick or Treaters getting candy" id="door3">
+        </div>
+    </section>
+
+    <script language="javascript">
+      document.getElementById("door1").addEventListener("click", changeImage1);
+        function changeImage1(){
+          document.getElementById("door1").src="assets/skeleton.gif";
+          document.getElementById("door1Title").innerHTML= "Trick!";
+          // alert ("You've been tricked!");
+        }
+      document.getElementById("door2").addEventListener("click", changeImage2);
+        function changeImage2() {
+          document.getElementById("door2").src="assets/pumpkin.gif";
+          document.getElementById("door2Title").innerHTML= "Trick!";
+        }
+      document.getElementById("door3").addEventListener("click", changeImage3);
+        function changeImage3() {
+          document.getElementById("door3").src="assets/candy4.gif";
+          document.getElementById("door3Title").innerHTML= "Treat!";
+          document.getElementById("door3Title").style.marginLeft = "22vw";
+        }
+
+    </script>
+  </body>
+
+</html>
