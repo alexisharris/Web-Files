@@ -1,0 +1,33 @@
+div {
+  background-color: red;
+}
+
+#foods {
+  display: flex;
+}
+
+/* flex-grow 1 means they are equally sized columns */
+.options {
+  flex-grow: 1;
+  width: auto;
+  margin: 3vw;
+}
+
+img {
+  max-width: 27vw;
+  height: 30vh;
+  width: 27vw;
+  object-fit: cover;
+}
+
+button {
+  float: right;
+  padding: 10px 50px;
+  margin-right: 3vw;
+}
+
+
+.blue {
+  background-color: blue;
+  color: white;
+}

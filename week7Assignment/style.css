@@ -1,0 +1,79 @@
+body {
+  background-image: url("assets/ocean.gif");
+  background-size: cover;
+}
+
+#section1 {
+  background-color: white;
+  margin: 20vh 15vw 5vh 15vw;
+  padding: 5vh 3vw 10vh 3vw;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,.4);
+}
+
+.instructions {
+  color: #1A64A6;
+  text-align: center;
+  margin: 10px 0 0 0;
+  padding: 0!important;
+}
+
+#heading {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 35px;
+}
+
+#description {
+  font-family: 'PT Sans', sans-serif;
+  font-style: italic;
+  font-size: 18px;
+}
+
+#quoteText {
+  font-family: 'Playfair Display', serif;
+  color: #1A573F;
+  text-align: center;
+  margin: 5vh 5vw;
+}
+
+#newQuote {
+  border-radius: 8px;
+  border-color: #1A64A6;
+  padding: 1vh 3vw;
+  float: right;
+  margin-top: 1vh;
+  background-color: #1A64A6;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 2px;
+  /* only works with elements that are display: block; so if it isn't working, add that css in */
+}
+
+#newQuote:hover {
+  border: #fff solid 1px;
+}
+
+#newQuote:active {
+  color: grey;
+}
+
+
+#music {
+  border-radius: 8px;
+  border-color: #1A64A6;
+  padding: 1vh 3vw;
+  float: right;
+  margin: 5vh 5vw;
+  background-color: #1A573F;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 1px;
+}
+
+#music:hover {
+  border: #fff solid 1px;
+}
+
+#music:active {
+  color: grey;
+}

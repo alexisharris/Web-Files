@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quote Machine</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section id="section1">
+      <h2 class="instructions" id="heading">Feeling stressed or overwhelmed? Here are some quotes to help you relax.</h2>
+      <p class="instructions" id="description"> As you read them, breathe. Really breathe slowly and just let whatever is bothering you go for a few minutes.</p>
+      <h2 id="quoteText"></<h2></h2>
+      <button type="button" id="newQuote">New Quote</button>
+      <audio autoplay="autoplay">
+        <source src="assets/background.mp3" />
+      <audio src="assets/background.mp3"></audio>
+      </audio>
+    </section>
+
+    <section>
+      <button type="button" id="music">Toggle relaxing ocean sounds</button>
+    </section>
+
+    <script>
+      const quotes = ["&quot;I’ve decided to be happy because it is good for my health.&quot;  –Voltaire", "&quot;Tension is who you think you should be. Relaxation is who you are.&quot;  –Chinese Proverb" , "&quot;Your mind will answer most questions if you learn to relax and wait for the answer.&quot;  –William Burroughs" , "&quot;Sometimes the most important thing in a whole day is the rest we take between two deep breaths.&quot;  –Etty Hillesum" ,  "&quot;Life isn’t as serious as the mind makes it out to be.&quot;  –Eckhart Tolle", "&quot;How beautiful it is to do nothing, and then to rest afterward.&quot;  –Spanish Proverb", "&quot;Give your stress wings and let if fly away.&quot;  –Terri Guillemets", "&quot;There is more to life than increasing its speed.&quot;  –Mohandas Gandhi" , "&quot;Sometimes the most productive thing you can do is relax.&quot;  –Mark Black", "&quot;You don’t always need a plan.  Sometimes you just need to breathe, trust, let go and see what happens.&quot;  –Mandy Hale" , "&quot;Nothing can bring you peace but yourself.&quot;  –Ralph Waldo Emerson" , "&quot;Almost everything will work again if you unplug it for a few minutes…Including you.&quot;  –Anne Lamott" , "&quot;Your calm mind is the ultimate weapon against your challenges.  So relax.&quot;  –Bryant McGill" , "&quot;Slow down and everything you are chasing will come around and catch you.&quot; –John De Paola"];
+      let quoteCount = 0;
+
+      document.getElementById("newQuote").addEventListener("click", buttonClicked);
+        function buttonClicked(){
+          console.log(quoteCount);
+          console.log(quotes[quoteCount]);
+          document.getElementById("quoteText").innerHTML = quotes[quoteCount];
+          if(quoteCount>=13){
+            quoteCount=0
+          }
+          else {
+            quoteCount ++;
+          }
+
+        }
+
+        const button = document.querySelector("#music");
+        const icon = document.querySelector("#music > i");
+        const audio = document.querySelector("audio");
+
+        button.addEventListener("click", () => {
+          if (audio.paused) {
+            audio.volume = 0.2;
+            audio.play();
+            loop=true;
+            icon.classList.remove('fa-volume-up');
+            icon.classList.add('fa-volume-mute');
+
+
+          } else {
+            audio.pause();
+            icon.classList.remove('fa-volume-mute');
+            icon.classList.add('fa-volume-up');
+            btn.value = "Play relaxing ocean sounds";
+          }
+          button.classList.add("fade");
+        });
+    </script>
+  </body>
+</html>
