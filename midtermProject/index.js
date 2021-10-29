@@ -1,4 +1,5 @@
 
+// checkbox code
 // listen for click on submit button
 document.querySelector(".submit").addEventListener("click", checkboxesClicked);
   // start function
@@ -21,6 +22,7 @@ document.querySelector(".submit").addEventListener("click", checkboxesClicked);
     }
   }
 
+// slides code
 const track = document.querySelector(".slideTrack");
 
 const pages = Array.from(track.children);
@@ -76,5 +78,7 @@ prevButton.addEventListener('click', e => {
   moveToSlide(track, currentSlide, prevSlide);
 })
 
-
-// Checkbox alerts
+// Note: I learned some of how to make the actual slide animations from: https://www.youtube.com/watch?v=gBzsE0oieio. The checkbox code is completely mine.
+// Some of the techniques/strategies from this tutorial didn't work for me, so I had to repurpose some code we made in class
+  // This tutorial was meant for carousel images, so I had to brainstorm ways to use the techniques for the code that I wrote that was not images
+// What we learned in class also helped me understand how to debug the problems from this video on my own!
