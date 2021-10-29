@@ -5,8 +5,9 @@
 document.querySelector(".submit").addEventListener("click", checkboxesClicked);
   // start function
   function checkboxesClicked () {
-    var container = document.querySelector('.slidePage');
-    // count all of the checkboxes that are checked on the page
+    // create a variable of only the monday slide to look for checkboxes
+    var container = document.querySelector('.monday');
+    // count all of the checkboxes that are checked on the page, make it a variable
     var checkboxes = container.querySelectorAll('input[type="checkbox"]:checked');
     // get length of result from variable above. If no checkboxes checked
     if(checkboxes.length==0) {
