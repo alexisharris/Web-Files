@@ -50,6 +50,21 @@ li {
   border-radius: 20px 20px 0 0;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #93AD66;
+}
+
 
 .slideTrack {
   padding: 0px;
