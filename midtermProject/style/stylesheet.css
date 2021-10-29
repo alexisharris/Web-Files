@@ -1,0 +1,172 @@
+body {
+  background: url(../assets/background.png) fixed no-repeat center center;
+  background-size: cover;
+}
+
+h1 {
+  padding-top: 30px;
+  text-align: center;
+  color: #F5FFE5;
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  margin: 0 0 15px 0;
+}
+
+li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+.wholeContent {
+  background-color: #233B39;
+  border-radius: 30px;
+  margin-top: 6%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.slides {
+  position: relative;
+  top: 50%;
+  /* margin-top: 10% !important; */
+  height: 350px;
+  width: 70%;
+  margin:0 auto;
+  background-color: #F5FFE5;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* .slideImage {
+  width: 100%;
+} */
+
+.slidesTrackContainer {
+  background-color: #F5FFE5;
+  height: 90%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+
+.slideTrack {
+  padding: 0px;
+  margin-top: 10px;
+  list-style: none;
+  background-color: #233B39;
+  color: #233B39;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.slidePage {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F5FFE5;
+}
+
+.slidePage h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+}
+
+.checkboxes {
+  margin-right: 80px;
+  margin-left: 70px;
+}
+
+input {
+  margin: 15px 0px;
+}
+
+.tuesday {
+  padding-left: 100px;
+}
+
+.wednesday {
+  padding-left: 90px;
+}
+
+.thursday {
+  padding-left: 60px;
+}
+
+.friday {
+  padding-left: 30px;
+}
+
+.saturday {
+  padding-left: 130px;
+}
+
+.sunday {
+  padding-left: 80px;
+}
+
+.slidesButtonLeft, .slidesButtonRight {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translate(-200%);
+  height: 50px;
+  width: 50px;
+  background: transparent;
+  border: 0;
+}
+
+.slidesButtonLeft img, .slidesButtonRight img {
+  width: 40px;
+}
+
+.slidesButtonRight {
+  right: -28%;
+}
+
+.slidesButtonLeft {
+  left: 35px;
+}
+
+.submit {
+  margin-top: 5%;
+  transform: translateX(200%);
+  border: 0;
+  background-color: #93AD66;
+  color: #233B39;
+  padding: 8px 30px;
+  border-radius: 5px;
+}
+
+
+/* More dots navigation code that got too hard */
+/* .slidesNav {
+  background-color: #233B39;
+  border-radius:0 0 20px 20px;
+  position: relative;
+  margin: 0 auto;
+  width: 56%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+}
+
+
+.slidesIndicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: #F5FFE5;
+  margin: 0 5px;
+}
+
+.slidesIndicator.currentSlide {
+  background: #93AD66;
+} */
