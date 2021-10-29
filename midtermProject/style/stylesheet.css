@@ -46,14 +46,14 @@ li {
   background-color: #F5FFE5;
   height: 90%;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   border-radius: 20px 20px 0 0;
 }
 
 
 .slideTrack {
   padding: 0px;
-  margin-top: 0px;
+  margin-top: 10px;
   list-style: none;
   background-color: #233B39;
   color: #233B39;
@@ -76,7 +76,6 @@ li {
   text-align: center;
   font-family: 'Playfair Display', serif;
   font-size: 40px;
-  margin: 20px 0;
 }
 
 .checkboxes {
