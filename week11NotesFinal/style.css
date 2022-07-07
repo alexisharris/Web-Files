@@ -1,3 +1,5 @@
+/* The order that css renders > !important, inline, ID, class, element/tag */
+/* Whichever rule comes last will be the one that is rendered in css */
 @media screen and (min-width: 800px) {
     #contactimg{
       display: block;
